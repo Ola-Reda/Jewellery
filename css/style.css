@@ -1,0 +1,488 @@
+/*start upper bar*/
+
+.upper-bar {
+    background-color: black;
+    padding: 25px;
+    color: white;
+}
+
+.upper-bar img {
+    margin-left: -20px;
+}
+
+.upper-bar ul {
+    padding-left: 100px;
+    font-size: 18px;
+}
+
+.upper-bar ul li {
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.upper-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .upper-bar .info {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+    .upper-bar {
+        padding-bottom: 0px;
+    }
+    .upper-bar .info li:first-child {
+        padding-right: 40px;
+    }
+    .upper-bar .info li:last-child {
+        padding-top: 0px;
+        padding-right: 350px;
+    }
+}
+
+
+/*end upper bar*/
+
+
+/*start navbar*/
+
+.navbar {
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.navbar ul li a {
+    color: #555454;
+    margin-right: 30px;
+    transition: all .8s ease-in-out;
+}
+
+.navbar ul a:hover {
+    color: #72dd78;
+}
+
+@media(min-width:992px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media(max-width:991px) {
+    nav {
+        background-color: #72dd78;
+    }
+    .navbar-brand,
+    .navbar-brand:hover,
+    .navbar ul li a {
+        color: white;
+    }
+    .navbar ul li a:hover {
+        color: #555454;
+    }
+}
+
+
+/*end navbar*/
+
+
+/*start carousel*/
+
+.carousel-caption {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    text-align: left;
+    color: #090303;
+}
+
+.carousel-caption span {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.carousel-caption h5 {
+    font-size: 50px;
+    margin-top: -20px;
+}
+
+.carousel-caption h4 {
+    color: #72dd78;
+    font-size: 60px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+.carousel-caption p {
+    color: #5b5b5b;
+    font-size: 18px;
+}
+
+
+/*end carousel*/
+
+
+/*for all heading*/
+
+.heading {
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading::first-letter {
+    color: #72dd78;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    .heading {
+        font-size: 35px;
+    }
+    .heading::first-letter {
+        font-size: 60px;
+    }
+}
+
+
+/*end for all heading*/
+
+
+/*for all para*/
+
+.para {
+    color: #444;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: .6px;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*end for all para*/
+
+
+/*start section about*/
+
+.about {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.about img {
+    width: 100%;
+}
+
+
+/*start section about*/
+
+
+/*start section jewellery*/
+
+.jewellery {
+    margin-top: 20px;
+}
+
+.jewellery .diamond {
+    background-color: #eaeaea;
+    margin-bottom: 25px;
+    padding: 25px;
+    padding-bottom: 1px;
+}
+
+.jewellery .diamond img {
+    width: 100%;
+}
+
+.jewellery .diamond p {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.jewellery .diamond p span {
+    color: #72dd78;
+}
+
+
+/*start section jewelly*/
+
+
+/*start section shop*/
+
+.shop {
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.shop p {
+    margin-bottom: 125px;
+}
+
+.shop .image {
+    position: relative;
+}
+
+.shop .image img {
+    width: 100%;
+}
+
+.shop .image::after {
+    content: "";
+    position: absolute;
+    right: -119px;
+    top: -90px;
+    background-color: #72dd78;
+    width: 660px;
+    height: 560px;
+    z-index: -1;
+}
+
+.shop .info-shop {
+    background: rgba(255, 255, 255, .9);
+    width: 690px;
+    height: 244px;
+    z-index: 100;
+    position: absolute;
+    top: 490px;
+    left: 210px;
+    padding: 56px 10px 50px 48px;
+}
+
+.shop .info-shop span {
+    color: black;
+}
+
+.shop .info-shop h4 {
+    color: #72dd78;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.shop .info-shop p {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .7px;
+}
+
+@media(max-width:1199px) {
+    .shop .image::after {
+        display: none;
+    }
+    .shop p {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:991px) {
+    .shop .info-shop {
+        display: none;
+    }
+    .shop {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .shop .info-shop {
+        top: 410px;
+        left: 240px;
+    }
+    .shop {
+        margin-bottom: 80px;
+    }
+}
+
+
+/*end section shop*/
+
+
+/*start section contact-us*/
+
+.contact-us {
+    margin-top: 30px;
+}
+
+.contact-us h2 {
+    margin-bottom: 30px;
+}
+
+.contact-us h2::first-letter {
+    font-size: 100px;
+}
+
+.contact-us .contact {
+    background-color: #444343;
+    padding: 90px 70px 80px 10px;
+    margin-bottom: 80px;
+    border-radius: 2px;
+}
+
+.contact-us .contact img {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact-us .contact input,
+textarea {
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    outline: none;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.contact-us .contact button {
+    background-color: #72dd78;
+    color: white;
+    border-radius: 50px;
+    transition: all .6s ease-in-out;
+    padding: 15px 60px;
+    font-size: 22px;
+    margin-left: 40px;
+    border: 1px solid #72dd78;
+    outline: none;
+}
+
+.contact-us .contact button:hover {
+    background-color: white;
+    color: #72dd78;
+    border: 1px solid white;
+}
+
+@media(max-width:767px) {
+    .contact-us .contact {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .contact-us .contact img {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*start section contact-us*/
+
+
+/*start section upperfooter*/
+
+.upper-footer {
+    background-color: #171817;
+    color: white;
+    padding: 90px;
+}
+
+.upper-footer h3 {
+    margin-bottom: 22px;
+}
+
+.upper-footer img {
+    height: 100px;
+}
+
+.upper-footer .address a {
+    color: white;
+    transition: color .5s ease-in-out;
+}
+
+.upper-footer .address a:hover {
+    color: #72dd78;
+    text-decoration: none;
+}
+
+.upper-footer .address i {
+    font-size: 22px
+}
+
+.upper-footer .links a {
+    background-color: #72dd78;
+    color: black;
+    padding: 2px 8px 0px 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.upper-footer .links a:hover {
+    background-color: #171817;
+    color: #72dd78;
+}
+
+.upper-footer .email input {
+    width: 270px;
+    outline: none;
+    border-radius: 50px;
+    padding: 10px 5px 10px 20px;
+    border: 1px solid white;
+}
+
+.upper-footer .email button {
+    background-color: #72dd78;
+    width: 40px;
+    position: absolute;
+    top: 55px;
+    left: 245px;
+    border-radius: 100%;
+    border: 1px solid #72dd78;
+    padding: 8px 3px 12px 3px;
+}
+
+@media(max-width:767px) {
+    .upper-footer {
+        padding: 60px 0px;
+    }
+    .upper-footer h3 {
+        margin-bottom: 10px;
+    }
+    .upper-footer .email,
+    .links,
+    .address {
+        margin-top: 30px;
+    }
+    .upper-footer .email button {
+        top: 73px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1199px) {
+    .upper-footer h3 {
+        margin-bottom: 14px;
+    }
+    .upper-footer .links,
+    .email {
+        margin-top: 40px;
+    }
+    .upper-footer .email button {
+        top: 87px;
+    }
+}
+
+
+/*end section upperfooter*/
+
+
+/*start footer*/
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 3px;
+}
+
+footer p {
+    color: #444;
+    text-align: center;
+}
+
+
+/*end footer*/
