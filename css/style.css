@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 /*start upper bar*/
 
 .upper-bar {
@@ -199,6 +204,7 @@
 
 .jewellery .diamond img {
     width: 100%;
+    transition: all .8s ease-in-out;
 }
 
 .jewellery .diamond p {
@@ -218,7 +224,7 @@
 /*start section shop*/
 
 .shop {
-    margin-bottom: 120px;
+    margin-bottom: 140px;
     position: relative;
 }
 
